@@ -1,2 +1,2 @@
 # Serratec-POO
-Projetos usando Programação Orientada a Objetos
+Projetos usando Programação Orientada a Objetos (Java)
