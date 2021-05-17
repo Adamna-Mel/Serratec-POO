@@ -12,11 +12,11 @@ import model.produto.Produto;
 import model.produto.TipoProduto;
 
 public class App{
-    public static <Date> void main(String[] args) {
+    public static void main(String[] args) {
         System.out.println("");
-        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
-        System.out.println("************************************ WEletronics ************************************");
-        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+        System.out.println("************************************** WEletronics **************************************");
+        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
         System.out.println("");
 
 
@@ -111,15 +111,15 @@ public class App{
     empresario.lerResposta(scanner.nextLine());
 
     if (empresario.getVerificarRelatorio().toLowerCase().equals("sim")){
-        System.out.print("Digite seu CNPJ: ");
+        System.out.print("Por favor, digite seu CNPJ: ");
         empresario.setCnpj(scanner.nextLine());
     
     
     
     System.out.println("");
-    System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");  
-    System.out.println("******************************** Relatório de Vendas ********************************");  
-    System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");  
+    System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");  
+    System.out.println("********************************** Relatório de Vendas **********************************");  
+    System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");  
     System.out.println(""); 
 
     var formatador = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
@@ -200,14 +200,22 @@ public class App{
     empresa.imprimirRelatorio(cliente5, pedido5, produto5);
 
     System.out.println("FATURAMENTO TOTAL R$" + (Math.round(empresa.calcularTotalPedidos())));
-   
+    
     }
+
 
     else {
         System.out.println("Enviaremos o relatorio por e-mail, para que possa verificar mais tarde."); 
-        System.out.print("Digite seu e-mail: ");
+        System.out.print("Por favor, digite seu e-mail: ");
         empresario.setEmail(scanner.nextLine());
     }  
- }
 
+
+    System.out.println("");
+    System.out.println("                        Obrigada por utilizar o sistema!");
+    System.out.println("");
+    System.out.println("                                   BOAS VENDAS!!");
+    System.out.println("");
+    System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+ }
 }
